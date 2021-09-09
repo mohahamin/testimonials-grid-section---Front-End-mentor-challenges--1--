@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+main {
+    display: flex;
+    max-width: 1440px;
+    max-height: 100vh;
+    margin: 20px 100px;
+}
+.container {
+    display: flex;
+}
+.mainSection {
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card-head , .name {
+    display: flex;
+}
+.card {
+    padding: 25px 35px 35px 30px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    margin: 10px;
+}
+.card h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 90%;
+}
+.card p {
+    font-size: .8rem;
+    opacity: .7;
+    line-height: 15px;
+}
+.card-head {
+    flex-direction: row;
+    align-items: center;
+}
+.card-head img {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name {
+    flex-direction: column;
+}
+.name span {
+    opacity: 50%;
+}
+.shortCard {
+    max-width: 255px;  
+}
+.lightCard {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    margin: 0 30px 0 0;
+}
+.purpleCard {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 79% 0;
+    margin: 0 30px 30px 0;
+    color: hsl(0, 0%, 100%);;
+}
+.grayCard {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+    margin: 0 30px 30px 0;
+}
+.darkCard {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    margin: 0 30px 0 0;
+}
+.darkCard img, .purpleCard img {
+    border: 2px solid #9570c9;
+}
+@media screen and (max-width: 768px) {
+    .container , .row {
+        flex-direction: column;
+    }
+    main {
+        margin: 10px;
+        justify-content: center;
+    }
+    .card {
+        max-width: 326px;
+        margin: 0 25px;
+        margin-bottom: 25px;
+    }
+}
